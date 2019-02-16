@@ -1,4 +1,4 @@
-function drawRectanglesAndLines() {
+function canvas1() {
     //get the element node
     const firstCanvas = document.getElementById('first');
     //need a drawing object for the canvas
@@ -14,6 +14,11 @@ function drawRectanglesAndLines() {
     ctxRect.moveTo(0, 0);  //starting point
     ctxRect.lineTo(200, 100); //(x, y)
     ctxRect.stroke();  //one of the "ink methods" to actually draw the line
+
+    //add some text (see canvas 5 and 6)
+    ctxRect.font = '30px fantasy';
+    ctxRect.fillStyle = 'purple';
+    ctxRect.fillText('canvas1.js', 10, 95);
 }
 
-export default drawRectanglesAndLines;
+export default canvas1;
