@@ -1,9 +1,20 @@
 //get the element node
-var canvas = document.getElementById('myCanvas');
+const firstCanvas = document.getElementById('first');
 //need a drawing object for the canvas
 //getContext() is a built-in (has properties and methods for drawing)
-var ctx = canvas.getContext('2d');
+const ctxRect = firstCanvas.getContext('2d');
 
-//now you can draw
-ctx.fillStyle = '#FF0000';  //fillStyle property can be a color, gradient, or pattern
-ctx.fillRect(0, 0, 150, 75);//fillRect(x, y, width, height)
+//DRAW A RECTANGLE AND FILL WITH COLOR
+//now you can fill in the rectangle with color, gradient, or pattern
+ctxRect.fillStyle = '#FF0000';  
+ctxRect.fillRect(0, 0, 150, 75);//fillRect(x, y, width, height)
+
+//DRAW LINES
+ctxRect.moveTo(0, 0);  //starting point
+ctxRect.lineTo(200, 100); //(x, y)
+ctxRect.stroke();  //one of the "ink methods" to actually draw the line
+
+//DRAW A CIRCLE
+const secondCanvas = document.getElementById('second');
+const ctxCircle = secondCanvas.getContext('2d');
+ctxCircle.beginPath();  //begins the path
