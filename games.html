@@ -8,7 +8,20 @@
     <title>Game Tutorial</title>
 </head>
 <body onload="startGame()">
-    
-    <script src='games.js'></script>
+    <div id="button-cluster">
+        <button onmousedown="moveup()" onmouseup="stopMove()" ontouchstart="moveup()">UP</button><br><br>
+        <button onmousedown="moveleft()" onmouseup="stopMove()" ontouchstart="moveleft()">LEFT</button>
+        <button onmousedown="moveright()" onmouseup="stopMove()" ontouchstart="moveright()">RIGHT</button><br><br>
+        <button onmousedown="movedown()" onmouseup="stopMove()" ontouchstart="movedown()">Down</button>
+    </div>
+  
+    <p>To Play: </p>
+    <p>Move the block around.</p>
+    <p>**Use your mouse or touchpad on the buttons**</p>
+    <p>**Use the arrow keys on your keyboard**</p>
+    <p>***press two keys at once to move diagonally***</p>
+
+
+    <script src="games.js"></script>
 </body>
 </html>
