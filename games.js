@@ -56,7 +56,7 @@ function updateGameArea() {
     whiteGamePiece.speedY = 0;
 
         //allows to use arrow keys to move block
-    if(myGameArea.keys && myGameArea.keys[37]) {
+    if(myGameArea.keys && myGameArea.keys[37]) {''
         whiteGamePiece.speedX = -1;
     }
     if(myGameArea.keys && myGameArea.keys[39]) {
