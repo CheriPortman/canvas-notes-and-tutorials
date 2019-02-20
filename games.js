@@ -1,5 +1,5 @@
 let whiteGamePiece;
-// let yellowGamePiece;
+let yellowGamePiece;
 
 function startGame() {
     /* eslint-disable-next-line */      //height, width, color, x, y
